@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="bg-dark py-3">
+    <div class="container">
+        <h1 class="text-white">Practico 1</h1>
+        <nav>
+            <a href="/" class="btn btn-primary">Bienvenida</a>
+            <a href="/products" class="btn btn-primary">Productos</a>
+            <a href="/add_products" class="btn btn-primary">Agregar Productos</a>     
+        </nav>
+    </div>
+</header>
+<main class="container mt-4">
+    <section>
+        <h2>{% block content %} {% endblock%}</h2>
+        <h2>{% block subtitle %} {% endblock %}</h2>
+    </section>
+</main>
+<footer class="bg-dark text-white py-3 mt-4">
+    <div class="container">
+        <p>Practico Flask - 2024</p>
+    </div>
+</footer>
+</body>
+</html>

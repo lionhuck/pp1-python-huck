@@ -1,0 +1,30 @@
+{% extends 'template_base.html' %}
+
+{% block title %}
+    Productos
+{% endblock %}
+
+
+{% block content %}
+<div class="table-responsive">
+    <table
+        class="table table-primary">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in listado %}
+            <tr>
+                <td>{{item.product}}</td>
+                <td>{{item.category}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
