@@ -1,0 +1,1 @@
+reglas de la aplicacion
